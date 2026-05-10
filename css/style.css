@@ -61,16 +61,16 @@ img {
 }
 
 .layout {
-  display: grid;
+  display: block;
   grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
   min-height: 100vh;
   align-items: start;
 }
 
 .content {
-  min-width: 0;
-  padding: 24px;
-  padding-bottom: calc(var(--footer-height) + 24px);
+  width: min(80%);
+  margin: 0 auto;
+  padding: 24px 0 80px;
 }
 
 .topbar {
@@ -139,7 +139,7 @@ img {
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.8;
-  max-width: 58ch;
+  max-width: 80ch;
 }
 
 .hero-actions {
@@ -177,7 +177,7 @@ img {
 .section-head p {
   margin: 0;
   color: var(--muted);
-  max-width: 60ch;
+  max-width: 100ch;
 }
 
 .btn {
@@ -363,6 +363,12 @@ img {
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
   z-index: 19;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 92%;
+  }
 }
 
 @media (max-width: 1060px) {

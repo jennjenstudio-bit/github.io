@@ -69,6 +69,7 @@
   color: var(--secondary-foreground);
   font-size: 1.03rem;
   line-height: 1.9;
+  text-align: justify !important;
 }
 
 .skills {
