@@ -53,3 +53,11 @@ loadSidebar().then(() => {
     link.addEventListener("click", closeSidebar);
   });
 });
+
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const overlay = document.querySelector('.mobile-overlay');
+
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('show');
+}
